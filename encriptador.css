@@ -1,0 +1,75 @@
+body {
+  background-color: #D8DFE8;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-cotainer {
+ margin-top: 100px;
+}
+
+#inputText {
+  background-color: #D8DFE8;
+  border: 0;
+  font-size: 25px;
+  width: 90%;
+  margin-left: 20px;   
+  margin-right: 20px;  
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#messagesBox {
+  background-color: rgb(193, 204, 204);
+}
+
+#alertMessage {
+  text-align: center;
+}
+
+#errorMessage {
+  text-align: center;
+}
+
+#outputText {
+  background-color: #D8DFE8;
+  border: 0;
+  font-size: 25px;
+  width: 80%;
+  margin-left: 20px;   
+  margin-right: 20px;  
+  height: 168px;
+}
+
+#encryptButton{
+  margin-left: 5%;
+  padding: 10px 20px;
+  border-radius: 10%;
+  border: 2px;
+  background-color: rgb(116, 116, 255);
+}
+
+#decryptButton{
+  margin-left: 2%;
+  padding: 10px;
+  border-radius: 10%;
+  border: 2px;
+  background-color: rgb(147, 147, 158);
+}
+
+#copyButton{
+  margin-left: 5%;
+  padding: 10px 20px;
+  border-radius: 10%;
+  border: 2px;
+  background-color: rgb(182, 206, 222);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #bbcbde;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+
