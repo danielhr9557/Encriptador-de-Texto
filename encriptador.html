@@ -4,31 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Encriptador de Texto</title>
-  <script src="./encriptador.js"></script>
+  
   <link rel="stylesheet" href="./encriptador.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
 </head>
 
 
 <body>
+  <div class="main-container">
+    <h1 class="pageName">NKRpt</h1>
+    <div class="box-container">
+        <div class="inner-box-1 box-1">
 
-  <div class="box-cotainer">
-    <textarea id="inputText" placeholder="Escribe el texto a encriptar" rows="7"></textarea>
+          <textarea id="inputText" class="text-box" placeholder="Escribe el texto a encriptar" rows="7"></textarea>
 
-    <button id="encryptButton" onclick="processText()">Encriptar</button>
-    <button id="decryptButton" onclick="reverseText()">Desencriptar</button>
-
-    <div id="messagesBox">
-      <p id="alertMessage">Sólo letras minúsculas y sin acento</p>
-      <p id="errorMessage"></p>
+          <div class="buttons-box">
+            <i class="bi bi-x-lg action-button" onclick="deleteText()"></i>
+            <button id="encryptButton" class="oldButtons"  onclick="processText()">Encriptar</button>
+            <button id="decryptButton" class="oldButtons" onclick="reverseText()">Desencriptar</button>
+            <button id="deleteButton" class="oldButtons" onclick="deteleText()">Borrar</button>
+          </div>
+         
+        </div>
+      
+        <div class="inner-box-1 box-2">
+          <p id="outputText" class="text-box">El texto se mostrará aquí...</p>
+          <div class="buttons-box">
+            <button id="copyButton" class="oldButtons"   onclick="copyText()">Copiar</button>  
+            <i class="bi bi-copy action-button" onclick="copyText()"></i>
+          </div>
+        
+        </div>
     </div>
-
-    <p id="outputText">El texto se mostrará aquí...</p>
+      <footer id="footer">Daniel Hernandez - 2024</footer>
   </div>
 
-  <div class="buttons">
-    <button id="copyButton" onclick="copyText()">Copiar</button>
-  </div>
-
-  <footer>Daniel Hernandez - 2024</footer>
+  <script src="./encriptador.js"></script>
 </body>
 </html>

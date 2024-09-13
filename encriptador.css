@@ -1,42 +1,118 @@
-body {
-  background-color: #D8DFE8;
-   font-family: Arial, Helvetica, sans-serif;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.box-cotainer {
- margin-top: 100px;
+html, body {
+  
+   font-family: Arial, Helvetica, sans-serif;
+   height: 100%;
+}
+
+.pageName {
+  margin: 5% 10% 0 10%;
+}
+
+.main-container {
+  
+  height: 100vh;
+  display: flex; 
+  flex-direction: column
+}
+
+.box-container {
+ 
+ border: 20px;
+ display: flex;
+ gap: 20px;
+ /* height: 100%; */
+ margin: 5% 10% 0 10%;
+}
+
+.inner-box-1 {
+  flex: 1;
+  height: 100%;
+  border: 1px solid rgb(144, 144, 144);
+  border-radius: 20px;
+  position: relative;
+}
+
+.box-1 {
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.box-2 {
+  
+  display: flex;
+  flex-direction: column;
+  
 }
 
 #inputText {
-  background-color: #D8DFE8;
+  resize: none;
   border: 0;
   font-size: 25px;
-  width: 90%;
-  margin-left: 20px;   
-  margin-right: 20px;  
+  /* width: 90%; */
+  margin: 20px;   
+  /* margin-left: 20px;    */
+  /* margin-right: 20px;   */
+  height: 100%;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#messagesBox {
-  background-color: rgb(193, 204, 204);
+.text-box::placeholder {
+  color: rgb(144, 144, 144);
+  opacity: 100;
 }
 
-#alertMessage {
+#outputText {
+  
+  border: 0;
+  color: rgb(144, 144, 144);
+  font-size: 25px;
+  /* width: 100%; */
+  margin: 20px; 
+  /* margin-left: 20px;   
+  margin-right: 20px;   */
+  height: 100%;
+
+}
+
+.text-box {
+  height: auto;
+  outline: none;
+}
+
+#messagesBox {
+  
+  margin: 0px;
+}
+
+#alertMessage, #errorMessage {
   text-align: center;
+  margin: 0;
 }
 
 #errorMessage {
   text-align: center;
 }
 
-#outputText {
-  background-color: #D8DFE8;
-  border: 0;
-  font-size: 25px;
-  width: 80%;
-  margin-left: 20px;   
-  margin-right: 20px;  
-  height: 168px;
+.bi-x-circle {
+  margin-left: auto;
+}
+
+.oldButtons {
+  display: none;
+}
+
+.action-button {
+  position: absolute;
+  top: 9%;
+  right: 6%;
+  font-size: 20px;
 }
 
 #encryptButton{
@@ -47,12 +123,27 @@ body {
   background-color: rgb(116, 116, 255);
 }
 
+.buttons-box {
+  margin: 0 10px 20px 10px ;
+  display: flex;
+  
+  /* position: relative; */
+}
+
 #decryptButton{
   margin-left: 2%;
   padding: 10px;
   border-radius: 10%;
   border: 2px;
   background-color: rgb(147, 147, 158);
+}
+
+#deleteButton{
+  margin-left: 2%;
+  padding: 10px;
+  border-radius: 10%;
+  border: 2px;
+  background-color: rgb(105, 105, 169);
 }
 
 #copyButton{
@@ -63,13 +154,13 @@ body {
   background-color: rgb(182, 206, 222);
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: #bbcbde;
+#footer {
   text-align: center;
-  padding: 10px;
+  margin: 0px 0 20px 0;
+  position: fixed;
+  bottom: 0;
+  /* left: 0; */
   width: 100%;
+
 }
 
